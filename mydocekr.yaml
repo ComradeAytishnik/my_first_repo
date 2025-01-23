@@ -8,6 +8,15 @@ services:
       ports:
         - '443:443'
       restart: unless-stopped
+
+    s_test_block:
+      image: nginx:stable
+      container_name: nginx_test
+      volumes:
+        - '/home/a1/f_mou:/f_mou_dir'
+      ports:
+        - '8080:80'
+      restart: unless-stopped
 networks:
    default:
       driver: bridge
