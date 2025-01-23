@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+   test_block:
+      image: ubuntu:22.04
+      container_name: ubuntu_main
+      volumes:
+        - '/home/a1/f_mou:/f_mou_dir'
+      ports:
+        - '443:443'
+      restart: unless-stopped
+networks:
+   default:
+      driver: bridge
+      name: ubunt_web_net
+
