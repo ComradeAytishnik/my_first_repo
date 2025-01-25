@@ -1,0 +1,6 @@
+FROM ubuntu:22.04
+LABEL DD_Young
+RUN apt update
+RUN apt install wget -y  && apt install procps -y
+ENW PASSWE=password
+RUN echo "PEPEPEPE" 

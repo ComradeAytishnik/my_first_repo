@@ -1,0 +1,10 @@
+services:
+   alp_test:
+     images: alpine
+     container_name: alpine_new
+     ports:
+      - '8080:80'
+networks:
+   net_new:
+     driver: bridge
+     name: net_new
